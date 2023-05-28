@@ -146,7 +146,16 @@ body {
 @media only screen and (max-width:800px) {
 
 
+    body {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh;
+        grid-template-areas: 
+            'main'
+        ;
+    }
 
+    #first{margin-top:25%}
 
     main>div {
         width: 80%;
@@ -176,7 +185,10 @@ body {
 
     .navbar .menu-hamburger {
         display: block;
+        width:120px;
+        height:120px;
     }
+
 
     .nav-links {
         top: 0;
