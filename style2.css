@@ -1,0 +1,212 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 5%;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+p {
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+
+main {
+    background-image: url("img/menu/fond-bois-frais_1284-6737.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+    grid-area: main;
+}
+
+.trait {
+    padding-left: 5%;
+    border-right: black;
+    border-right: thin;
+    border-right-style: dotted;
+
+}
+
+
+.space {
+    margin: 15px 0;
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(227, 181, 15);
+    grid-area: nav;
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.navbar {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+
+}
+
+.navbar .nav-links ul li {
+    margin: 0 100px;
+}
+
+
+
+
+
+
+.navbar a {
+    color: #345463;
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 11.5vh 88vh;
+    grid-template-areas: 'nav'
+        'main'
+    ;
+    grid-gap: 2px;
+}
+
+.navbar li:hover{
+    font-size: larger;
+}
+
+/** responsive for mobile phone */
+@media only screen and (max-width:800px) {
+
+
+
+
+    main>div {
+        width: 80%;
+        height: 75vw;
+        margin-bottom: 8%;
+        margin-left: 10%;
+    }
+
+    main>div>img {
+        width: 100%;
+    }
+
+    main>div>a {
+        z-index: 5000;
+
+    }
+
+    main {
+        display: block;
+        margin-left: 0;
+    }
+
+    .navbar {
+        padding: 0;
+        background-color: white;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        display: flex;
+        background-color: rgba(244, 244, 244, 0.294);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        margin-top: -100vh;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-top: 0;
+    }
+
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+}

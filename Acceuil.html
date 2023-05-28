@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="box.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="Acceuil.html">Acceuil</a></li>
+                <li><a href="#">Boissons</a></li>
+                <li><a href="#">Plats Fat</a></li>
+                <li><a href="#">Healthy</a></li>
+                <li><a href="#">Dessert</a></li>
+            </ul>
+        </div>
+        <img src="img/menu/images.jpg" class="menu-hamburger">
+    </nav>
+    
+    <main>
+        <div>
+            <a href="pancackes.html"><img src="img/pancackes/p.webp"></a>
+            <a href="pancackes.html">
+                <h3>Pancackes</h3>
+            </a>
+        </div>
+
+        <div>
+            <a href="arancini.html"><img src="img/arancinni/640px-Arancini_002.jpg"></a>
+            <a href="arancini.html">
+                <h3>Aracini</h3>
+            </a>
+        </div>
+    </main>
+
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>

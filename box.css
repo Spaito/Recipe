@@ -1,0 +1,25 @@
+img{
+    width:100%;
+    height:70%;
+    border-radius: 5% 5% 0 0;
+}
+
+main > div{
+    margin: 3%;
+    border: thin solid black;
+    border-radius: 5%;
+    width:200px;
+    height:200px;
+    background-color: rgb(241, 224, 223);
+}
+
+div > a > h3{
+    text-decoration:underline;
+    text-align: center;
+    z-index: 5;
+}
+
+div > a{
+    z-index:5;
+}
+
