@@ -18,5 +18,11 @@
 
 #calculator > input{width:50%;}
 
-#calculator > #plus{margin-left: 8%;}
+#calculator > #plus{
+    margin-left: 8%;
+    z-index:1000000;
+}
+@media screen and (max-width:1300px){
+.trait > h1{margin-top: 70%;}
+}
 
