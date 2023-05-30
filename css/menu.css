@@ -38,3 +38,17 @@
   .image {
     animation: tremblement 2s;
   }
+
+  #flan:hover{animation: symetrie-verticale 2s infinite;}
+
+  @keyframes symetrie-verticale {
+    0% {
+      transform: scaleX(1); /* État initial : pas de symétrie */
+    }
+    50% {
+      transform: scaleX(-1); /* Symétrie verticale à mi-chemin */
+    }
+    100% {
+      transform: scaleX(1); /* Retour à l'état initial : pas de symétrie */
+    }
+  }

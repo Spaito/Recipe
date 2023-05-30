@@ -29,18 +29,31 @@
     <div class="trait">
         <h1>La pizza</h1>
         <img src="../img/pizza/pizza.jpeg" title="Pancackes" class="space">
-        <h2> Les ingrédients:</h2>
-        <h3>Pour le levain(Poolish):</h3>
-        <p><span>200</span>ml. d'eau</p>
-        <p><span>200</span>gr. Farine</p>
-        <p><span>6.7</span>gr. levure sche(double pour la fraîche)</p>
-        <p><span>6.7</span>gr. de miel</p>
-        <h3>Pour la pate final:</h3>
-        <p>Levain Tout</p>
-        <p> Eau <span>467</span>ml</p>
-        <p>Farine <span>816</span>gr</p>
-        <p>Sel <span>27</span> gr</p>
-        <h2>Les étapes:</h2>
+        <div id="calculator">
+            <h1>Combien de personne?</h1>
+            <div id="calculator_line">
+                <div id="plus">+</div>
+                <span id="number">5</span>
+                <div id="moins">-</div>
+            </div>
+
+            <h2> Les ingrédients:</h2>
+
+            <ul>
+                <li><h2>Le poolish</h2></li>
+                <li><img src="../img/pizza/eau.jpg"><p><span class="hasToChange">200</span>ml. d'eau</p></li>
+                <li><img src="../img/pizza/farine.jpeg"><p><span class="hasToChange">200</span>gr. Farine</p></li>
+                <li><img src="../img/pizza/levure_boulangere_traditionnelle.png"><p><span class="hasToChange">6.7</span>gr. levure sche(double pour la fraîche)</p></li>
+                <li><img src="../img/pizza/miel.webp"><p><span class="hasToChange">6.7</span>gr. de miel</p></li>
+                <li><h2>La pâte</h2></li>
+                <li><img src="../img/pancackes/finmelange.jpg">poolish</li>
+                <li><img src="../img/pizza/eau.jpg"><p>Eau <span class="hasToChange">467</span>ml</p></li>
+                <li><img src="../img/pizza/farine.jpeg"><p>Farine <span class="hasToChange">816</span>gr</p></li>
+                <li><img src="../img/pizza/sel.jpeg"><p>Sel <span class="hasToChange">27</span> gr</p></li>
+            </ul>
+        </div>
+        <h2 id="tuSors">Les étapes:</h2>
+        <!--
         <video width="25%" height="auto" controls>
             <source src="../video/boule (online-video-cutter.com).mp4" type="video/mp4">
         </video>
@@ -48,17 +61,12 @@
         <video width="25%" height="300px" controls>
             <source src="../video/faconnage (online-video-cutter.com) (1).mp4" type="video/mp4">
         </video>
-        <div id="calculator">
-            <h1>Combien de personne?</h1>
-            <img src="../img/général/+-removebg-preview (1).png" class="icon" id="plus">
-            <input type="number" value="5" id="input">
-            <img src="../img/général/--removebg-preview (2).png" class="icon" id="moins">
-        </div>
+        -->
     </div>
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger")
         const navLinks = document.querySelector(".nav-links")
-    
+
         menuHamburger.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-menu')
         })
