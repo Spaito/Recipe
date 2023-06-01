@@ -47,22 +47,30 @@
     border:2px solid black;
 }
 
-li img{height:35px;width:35px;}
+ul li img{height:35px;width:35px;}
 
 ul{
     display: flex;
     flex-direction: column;
 }
 
-li{
+ul li{
     padding: 5px;
     border-bottom: 2px dotted grey;
     display:flex;
     justify-content: space-between;
 }
 
-li > p{
+ul li p{
     display: inline;
+}
+
+#recette{
+    margin-left: 25%;
+}
+
+video{
+    border-radius: 15px;
 }
 
 
