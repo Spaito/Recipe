@@ -21,7 +21,7 @@ h2{
 }
 
 p{
-    color:rgb(255, 102, 0);
+    color:rgb(0, 0, 0);
     margin: 8px;
     font-style: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,18 +34,18 @@ body{
     background-repeat:no-repeat ;
     background-size: cover;
     background-blend-mode: lighten;
+    height: 100vh;
 }
 
 .trait{
-    background-color: blanchedalmond;
+    background-color: rgb(242, 222, 210);
     margin-left: 15%;
     border-radius: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position:relative;
-    
-
+    overflow: visible;
 }
 
 img{
@@ -164,7 +164,8 @@ header{
         .trait{
             border-radius: 20px;
             width:100%;
-            margin-left:0;
+            margin-left:5%;
+            overflow:scroll;
         }
     }
 }

@@ -47,26 +47,30 @@
     border:2px solid black;
 }
 
-ul li img{height:35px;width:35px;}
+#listed li img{height:35px;width:35px;}
 
-ul{
+#listed{
     display: flex;
     flex-direction: column;
 }
 
-ul li{
+#listed li{
     padding: 5px;
     border-bottom: 2px dotted grey;
     display:flex;
     justify-content: space-between;
 }
 
-ul li p{
+#listed li p{
     display: inline;
 }
 
 #recette{
     margin-left: 25%;
+}
+#recette li p{
+    margin-top:25px;
+    margin-bottom:25px ;
 }
 
 video{
@@ -77,8 +81,9 @@ video{
 
 #calculator #calculator_line:hover{background-color: rgb(23, 23, 23);color:rgb(255, 255, 255)}
 
-/**
-@media screen and (max-width:1300px){
-.trait > h1{margin-top: 70%;}
-}
 
+@media screen and (max-width:500px){
+    .trait{
+        height:500px;
+    }
+}
