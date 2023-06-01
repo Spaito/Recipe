@@ -1,0 +1,286 @@
+.source-list-wrap {
+    position: relative;
+    width: 80%;
+    border-radius: 44px;
+    background-color: #faf8f5;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0/12%), 0 12px 16px 0 rgb(0 0 0/8%), inset 0 -3px 3px 0 hsl(0deg 0% 48%/10%), inset 0 3px 3px 0 hsl(0deg 0% 100%/90%);
+    max-width: 1080px;
+    margin: 15% auto 60px auto;
+    height:max-content;
+    grid-area: main;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body, html {
+    width: 100%;
+    font: 24px/1.5 MohrRounded-Black,ResourceHanRoundedCN,Microsoft YaHei,sans-serif;
+    color: #fff;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.h2-media-video {
+    background-color: #ffcf33;
+}
+.title-with-line {
+    position: relative;
+    padding-top: 9.2%;
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: #4b4f59;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.bg-media-video {
+    opacity: .16;
+}
+.bg, .img-text {
+    position: absolute;
+}
+.bg {
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/menu/fond-boulangerie-dessine-main_23-2148136973.jpg");
+    background-size: 100% 100%;
+    opacity: .04;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.con-animals {
+    position: absolute;
+    right: 2.5%;
+    bottom: -30%;
+    height:200%;
+    max-width: 300px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+.source-list {
+    position: relative;
+}
+
+.arrow-left, .arrow-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -49px;
+    z-index: 5;
+    width: 34px;
+    height: 100%;
+    padding-right: 5%;
+}
+
+.arrow-right {
+    left: auto;
+    right: -49px;
+    padding-left: 0;
+    padding-right: 5%;
+}
+
+.arrow-left-btn, .arrow-left-btn.active, .arrow-right-btn, .arrow-right-btn.active {
+    cursor: pointer;
+}
+
+.arrow-left-btn.active, .arrow-right-btn.active {
+    opacity: 1;
+}
+/**
+.arrow-left-btn, .arrow-right-btn {
+    background-image: url("../img/menu/media_arrow_normal.d3da77f6-removebg-preview\ \(1\).png");
+    background-size: 100% auto;
+}
+*/
+
+.arrow-left-btn, .arrow-right-btn {
+    display: block;
+    position: absolute;
+    top: 53%;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    height: 86px;
+    margin-top: -50px;
+    border: none;
+    width: 86px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+li:hover{
+    animation: prout .8s ease-in-out;
+}
+
+@keyframes prout {
+    transfrom {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.arrow-left-btn {
+    transform: rotateY(180deg);
+}
+
+.arrow-right-btn {
+    left: auto;
+    right: 0;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.mask-left.active {
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.mask-left {
+    -webkit-mask-image: linear-gradient(90deg,transparent 3.2%,#000 8.5%);
+    -webkit-mask-position: top right;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-transition: mask-size .8s cubic-bezier(.42,.65,.27,.99);
+    mask-image: linear-gradient(90deg,transparent 3.2%,#000 8.5%);
+    -webkit-mask-size: 105% 100%;
+    mask-size: 105% 100%;
+    mask-position: top right;
+    mask-repeat: no-repeat;
+    transition: -webkit-mask-size .8s cubic-bezier(.42,.65,.27,.99);
+    transition: mask-size .8s cubic-bezier(.42,.65,.27,.99);
+    transition: mask-size .8s cubic-bezier(.42,.65,.27,.99),-webkit-mask-size .8s cubic-bezier(.42,.65,.27,.99);
+}
+.source-con-wrap {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+}
+
+.mask-right.active {
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.mask-right {
+    -webkit-mask-image: linear-gradient(90deg,#000 89.5%,transparent 94.5%);
+    -webkit-mask-size: 105% 100%;
+    -webkit-mask-position: left top;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-transition: mask-position .8s cubic-bezier(.42,.65,.27,.99);
+    mask-image: linear-gradient(90deg,#000 89.5%,transparent 94.5%);
+    mask-size: 105% 100%;
+    mask-position: left top;
+    mask-repeat: no-repeat;
+    transition: all .8s cubic-bezier(.42,.65,.27,.99);
+}
+
+.source-con {
+    position: relative;
+    width: 100%;
+    padding: 0 2.8%;
+    left: -2.8%;
+}
+
+.source-item-wrap {
+    width: 33%;
+    min-width: 160px;
+    padding: 40px 30px 32px 40px;
+    white-space: nowrap;
+    transition: transform .4s cubic-bezier(.42,.65,.27,.99);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.source-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 30px 0 0;
+    user-select: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.source-item-con {
+    display: block;
+    position: relative;
+    padding-top: 60.15%;
+}
+
+.source-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border-radius: 24px;
+    -webkit-user-drag: none;
+}
+.last{
+    margin-right: 0;
+}

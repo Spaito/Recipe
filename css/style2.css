@@ -56,30 +56,27 @@ span {
 }
 
 .navbar {
-    background-color: rgb(227, 181, 15);
+    background-color: rgb(0, 0, 0);
     grid-area: nav;
-    position: absolute;
-    padding: 50px;
+    position:relative;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
     width: 100%;
-}
-
-
-
-.navbar {
     font-size: 1em;
     font-weight: bold;
+    overflow: hidden;
 }
+
 
 .navbar .nav-links ul {
     display: flex;
 
 }
 
-.navbar .nav-links ul li {
-    margin: 0 100px;
+.navbar .nav-links ul li a {
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 
@@ -88,27 +85,11 @@ span {
 
 
 .navbar a {
-    color: #345463;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
 
-@keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
+
 
 
 
@@ -137,9 +118,11 @@ body {
     ;
 }
 
-.navbar a:hover{
-    font-size: 1.5em;
+.navbar li a:hover{
+   color:rgb(49, 186, 254)
 }
+
+
 
 /** responsive for mobile phone */
 @media only screen and (max-width:800px) {
@@ -179,13 +162,20 @@ body {
 
     .navbar {
         padding: 0;
-        background-color: white;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        overflow: visible;
+    }
+
+    #cute{
+        display: none;
     }
 
     .navbar .menu-hamburger {
         display: block;
         width:120px;
         height:120px;
+        z-index: 10000000;
     }
 
 
@@ -201,6 +191,7 @@ body {
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease;
+        z-index: 1000;
     }
 
     .nav-links.mobile-menu {
@@ -217,6 +208,14 @@ body {
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
+    }
+
+    .con-animals{
+        width:25%;
+    }
+
+    .source-list-wrap{
+        margin-top: 50%;
     }
 
 
