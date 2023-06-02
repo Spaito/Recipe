@@ -148,6 +148,13 @@ li:hover{
     }
 }
 
+.con-animals:hover{
+    animation: all 3s ease-in-out;
+}
+
+ 
+
+
 .arrow-left-btn {
     transform: rotateY(180deg);
 }
