@@ -32,11 +32,6 @@ p {
 }
 
 
-main {
-    display: flex;
-    justify-content: space-evenly;
-    grid-area: main;
-}
 
 .trait {
     padding-left: 5%;
@@ -47,9 +42,6 @@ main {
 }
 
 
-.space {
-    margin: 15px 0;
-}
 
 span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -110,12 +102,6 @@ body {
     background-size: cover;
     background-blend-mode: lighten;
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 12vh 88vh;
-    grid-template-areas: 'nav'
-        'main'
-    ;
 }
 
 .navbar li a:hover{

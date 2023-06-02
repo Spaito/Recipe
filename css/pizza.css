@@ -81,9 +81,26 @@ video{
 
 #calculator #calculator_line:hover{background-color: rgb(23, 23, 23);color:rgb(255, 255, 255)}
 
-
 @media screen and (max-width:500px){
+    img,video{
+        width:80%;
+        height:auto;
+    }
+
+    video{
+        margin:10px;
+    }
+
+    body{
+        height:min-content;
+    }
+
     .trait{
+        border-radius: 20px;
+        width:100%;
+        margin-left:5%;
+        overflow:scroll;
         height:500px;
     }
 }
+
